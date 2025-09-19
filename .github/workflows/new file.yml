@@ -1,3 +1,4 @@
+
 on:
       push:
         branches:
@@ -18,4 +19,4 @@ jobs:
         needs: job1
         runs-on: ubuntu-latest
         steps:
-            - run: echo "${{ needs.job1.outputs.artifact }}"                     
+            - run: echo "${{ needs.job1.outputs.artifact }}"    
