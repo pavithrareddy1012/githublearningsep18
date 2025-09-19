@@ -13,7 +13,7 @@ jobs:
               name: step 1
               run: echo "tip=hello >> $GITHUB_OUTPUT 
             - name: stp 2
-              run: echo "output from step1 is ${{ steps.step1.outputs.tip}}"
+              run: echo "output from step1 is ${{ steps.step1.outputs.tip }}"
     job2:
         needs: job1
         runs-on: ubuntu-latest
