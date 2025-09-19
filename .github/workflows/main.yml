@@ -2,8 +2,8 @@
 name: Manual maven steps for ci
 on:
     pull_request:
-      branches: 
-        - main
+          branches: 
+                - main
     workflow_dispatch:
 
 jobs:
