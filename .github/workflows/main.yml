@@ -1,8 +1,8 @@
 name: Manual maven steps for ci
 on:
     pull_request:
-        branches: 
-          - main
+      branches: 
+        - main
     workflow_dispatch:
 
 jobs:
@@ -15,5 +15,5 @@ jobs:
                 distribution: 'temurin'
                 java-version: '21'
           - name: build package
-            run: mvn ${{ vars.GOAL  }}
+            run: mvn ${{ vars.GOAL }}
           
