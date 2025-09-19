@@ -23,3 +23,8 @@ jobs:
               env:
                 ORG_NAME: 123 limited
               run: echo '${{ env.ORG_NAME }}'
+    vars-job:
+        runs-on: ubuntu-latest
+        steps:
+            - name: print vars
+              run: echo 'group = ${{ vars.GROUP_NAME }}  user = ${{ vars.USERNAME }} token_hero = ${{ secrets.TOKEN_HERO  }}'
